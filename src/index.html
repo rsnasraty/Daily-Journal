@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daily Journal</title>
 </head>
+
 <body>
-        <link href="/src/styles/journal.css" type="text/css" rel="stylesheet">
+    <link href="/src/styles/journal.css" type="text/css" rel="stylesheet">
     <header>
-    <h1>Daily Journal</h1>
+        <h1>Daily Journal</h1>
     </header>
     <section class="main">
-            <form action="/index.html" method="POST">
-                <fieldset>
-                    <label for="Date">Today's Date:</label>
-                    <input class="field" type="date" name="Date">
-                </fieldset>
-                <fieldset>
-                        <label for="Concepts">Concept's Covered:</label>
-                        <textarea class="field" type="text" name="Concepts" rows="3" cols="50"></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <label for="Journal">Journal Entry:</label>
-                        <textarea class="field" id="Journal" name="Journal Entry" rows="10" cols="50"></textarea>
-                    </fieldset>
-                    <fieldset>
-                            <label for="Mood">Mood:</label>
-                            <select class="field" id="Mood" name="Mood">
-                                <option value="happy">Happy</option>
-                                <option value="bored">Bored</option>
-                                <option value="Chillin">Chillin</option>
-                                <option value="calm">Calm</option>
-                                <option value="hyper">Hyper</option>
-                                <option value="annoyed">Annoyed</option>
-                                <option value="freakingOut">Freaking Out</option>
-                                <option value="tired">Tired</option>
-                                <option value="emo">Emo</option>
-                                <option value="tired">Tired</option>
-                                <option value="dramatic">Dramatic</option>
-                            </select>
-                        </fieldset>
-                    </form>
-                </section>
-                <section>
-                    <input class="button" type="submit" value="Record Entry">
-                </section>
+        <form action="/index.html" method="POST">
+            <fieldset>
+                <label for="Date">Today's Date:</label>
+                <input class="field" type="date" name="Date">
+            </fieldset>
+            <fieldset>
+                <label for="Concepts">Concept's Covered:</label>
+                <textarea class="field" type="text" name="Concepts" rows="2" cols="50"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="Journal">Journal Entry:</label>
+                <textarea class="field" id="Journal" name="Journal Entry" rows="8" cols="50"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="Mood">Mood:</label>
+                <select class="field" id="Mood" name="Mood">
+                    <option value="happy">Happy</option>
+                    <option value="determined">Determined</option>
+                    <option value="bored">Bored</option>
+                    <option value="Chillin">Chillin</option>
+                    <option value="calm">Calm</option>
+                    <option value="hyper">Hyper</option>
+                    <option value="annoyed">Annoyed</option>
+                    <option value="ambivalent">Ambivalent</option>
+                    <option value="tired">Tired</option>
+                    <option value="dramatic">Dramatic</option>
+                </select>
+            </fieldset>
+        </form>
+    </section>
+    <section>
+        <input class="button" type="submit" value="Record Entry">
+    </section>
+    <script type="module" src="journal.js"></script>
 </body>
+
 </html>
