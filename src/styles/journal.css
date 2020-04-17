@@ -1,21 +1,29 @@
 body {
-    background-color: rgb(250, 244, 253);
+    background-color: rgb(244, 241, 241)
     margin: 0;
     display: flex;
     flex-direction: column;
  }
   header {
     font-family:'Times New Roman', Times, serif;
-    color: rgb(92, 48, 158);
-    background-color: rgba(238, 232, 255, 0.94);
+    color: rgb(69, 13, 153);
+    background: rgb(205,244,255);
+background: linear-gradient(0deg, rgba(205,244,255,1) 0%, rgba(241,235,255,1) 100%);
     border-bottom: 2px solid rgba(12, 7, 27, 0.411);
     text-align: center;
-    margin-bottom: 20px;
+    word-spacing: 2px;
     width: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+
  }
   h1 {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-variant: small-caps;
  }
   
  .main {
@@ -30,45 +38,63 @@ body {
     width: 100%;
     flex-basis: 50%;
     margin-right: 10px;
+    font-variant: small-caps;
  }
   fieldset {
+   color: rgb(69, 13, 153);
+   font-weight: bolder;
     display: flex;
     flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
     border: 2px solid rgb(31, 16, 58);
-    background-color: rgb(232, 227, 245, 0.94);
-    color: rgb(92, 48, 158);
+    background: rgb(205,244,255);
+background: linear-gradient(0deg, rgba(205,244,255,1) 0%, rgba(241,235,255,1) 100%);
     padding: 5px;
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
     width: 50%;
+    word-spacing: 2px;
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+font-variant: small-caps;
  }
   .field {
     border: 1px solid rgb(0, 0, 0);
+    
  }
   label {
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 5px;
+display: block;
+width: 10em;
+float: left;
  }
   input,textarea,select {
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    text-align-last: center;
+    
  }
   
   .button {
-    color: rgb(92, 48, 158);
+    color: rgb(69, 13, 153);
     font-weight: bolder;
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 2px;
+    word-spacing: 2px;
     margin-right: 5px;
-    background-color: rgb(232, 227, 245, 0.94);
+    background: rgb(205,244,255);
+    background: linear-gradient(0deg, rgba(205,244,255,1) 0%, rgba(241,235,255,1) 100%);
     border: 1px solid black;
     padding: 5px;
     box-shadow: 2px 2px 3px 1px gray;
     margin-left: 20px;
+    display: block;
+    width: 10em;
+    float: left;
+    -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   font-variant: small-caps;
  }
