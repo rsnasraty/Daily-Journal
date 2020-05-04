@@ -1,3 +1,4 @@
+
 const makeJournalEntry = (entry) => {
   return `
   <h3><b>Today's Entry</b></h3>
