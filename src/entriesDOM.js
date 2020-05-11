@@ -8,6 +8,7 @@ const renderJournalEntries = (entries) => {
   entries.forEach(entry => {
     const entryHtml = makeJournalEntry(entry);
     container.innerHTML += entryHtml;
+    
   });
 };
 

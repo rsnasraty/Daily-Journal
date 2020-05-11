@@ -11,10 +11,12 @@ recordEntry.addEventListener("click",  function () {
     const conceptsInput = document.querySelector("#Concepts");
     const entryInput = document.querySelector("#Entry");
     const moodInput = document.querySelector("#Mood");
-
+  
     //calls upon the factory function here
     const newEntry = createNewEntry(dateInput.value, conceptsInput.value, entryInput.value, moodInput.value)
     //value property gets the text you type/choose 
+
+
 
     API.recordJournalEntry(newEntry)
     .then(API.fetchEntries).then(renderJournalEntries)
