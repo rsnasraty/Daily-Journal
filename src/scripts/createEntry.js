@@ -1,11 +1,11 @@
 //Factory Function to make the new entry
 
-const createNewEntry = (dateInput, conceptsInput, entryInput, moodInput) => {
+const createNewEntry = (date, concepts, entry, mood) => {
     return {
-        "date": dateInput.value,
-        "concepts": conceptsInput.value,
-        "entry": entryInput.value,
-        "mood": moodInput.value
+        "date": date,
+        "concepts": concepts,
+        "entry": entry,
+        "mood": mood
     }
 }
 

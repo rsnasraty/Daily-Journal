@@ -17,9 +17,8 @@ recordEntry.addEventListener("click",  function () {
     //value property gets the text you type/choose 
 
     API.recordJournalEntry(newEntry)
-        .then(API.fetchEntries)
-        .then(renderJournalEntries);
-})
-
+    .then(API.fetchEntries).then(renderJournalEntries)
+      
+});
 
 API.fetchEntries().then(renderJournalEntries);
